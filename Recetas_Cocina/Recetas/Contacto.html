@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../Css/Estilos2.css">
+</head>
+<body>
+    <header><h3>Contacto</h3></header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h3>¿Tienes que comentarnos algo o pedirnos una receta? No dudes en escribirnos.</h3>  
+        <fieldset>
+            <legend><b>Datos</b></legend>
+            Nombre <input type="text" name="nombre" maxlength="30" size="20"/><br>
+            E-Mail <input type="email" name="mail" placeholder="ejemplo@...mial.com"/><br>
+            Mensaje<br>
+            <textarea name="mensaje" rows="15" cols="100"></textarea>
+        </fieldset>
+        <br>
+        <input type="button" name="enviar" onclick="alert('Se han guardado los datos correctacmente')" value="Enviar"/>
+    </article>
+</body>
+</html>

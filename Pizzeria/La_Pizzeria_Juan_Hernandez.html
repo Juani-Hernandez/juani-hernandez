@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido de Pizza</title>
+    <style>
+        body  {
+            display: table;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #fcfaea;
+            }
+
+        .arriba {background-color: #e4ffe5;}
+        .medio {background-color: rgb(255, 255, 255);}
+        .bajo { background-color: rgb(255, 224, 224);}
+    </style>
+</head>
+<body> 
+    <h2>Pedido de pizza</h2>
+    <fieldset class="arriba">
+        <legend><b>La pizza</b></legend>
+        <b>Ingredientes</b><br>
+        <br>
+        <input type="checkbox" name="queso" value="Queso"/>Queso<br>
+        <input type="checkbox" name="pimiento" value="Pimiento"/>Pimiento<br>
+        <input type="checkbox" name="cebolla" value="Cebolla"/>Cebolla<br>
+        <input type="checkbox" name="piña" value="Piña"/>Piña<br>
+        <input type="checkbox" name="bacon" value="Bacon"/>Bacon<br>
+        <input type="checkbox" name="huevo" value="Champiñon"/>Champiñon<br>
+        <input type="checkbox" name="vegetales" value="Vegetales"/>Vegetales<br>
+        <input type="checkbox" name="4 quesos" value="4 Quesos"/>4 Quesos<br>
+        <br>
+        <b>Tamaño</b><br>
+        <br>
+        <input type="radio" name="tamaño" value="Pequeña"/>Pequeña<br>
+        <input type="radio" name="tamaño" value="Mediana"/>Mediana<br>
+        <input type="radio" name="tamaño" value="Grande"/>Grande<br>
+    </fieldset>
+    <fieldset class="medio">
+        <legend><b>Datos de entrega</b></legend>
+        Nombre <input type="text" name="nombre" maxlength="35" size="20"><br>
+        Direccción <input type="text" name="direccion" maxlength="50" size="20"><br>
+        Telefono <input type="number" name="telefono" maxlength="15" size="20"><br>
+        Instrucciones especiales<br>
+        <textarea name="instrucciones" rows="15" cols="50"></textarea>
+    </fieldset>
+    <fieldset class="bajo">
+        <legend><b>Método de pago</b></legend>
+        <select>
+        <option value="Efectivo" selected="selected">Efectivo</option>
+        <option value="Tarjeta">Tarjeta</option>
+        </select>
+    </fieldset>
+    <input type="button" name="ok" onclick="alert('Los datos se han guardado correctacmente. Gracias por su compra.')" value="OK"/>
+
+
+</body>
+</html>
