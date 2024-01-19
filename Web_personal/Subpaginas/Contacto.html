@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <style>
+        body {
+            display: table;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgba(195, 255, 255, 0.336);
+            font-family: Arial, Helvetica, sans-serif;
+             }
+        
+        fieldset {
+            padding: 20px 40px;;
+            }
+    </style>
+</head>
+<body>
+    <h1>Contacto</h1>
+    <fieldset>
+        <legend><b>Datos</b></legend>
+        Nombre <input type="text" name="nombre" maxlength="30" size="20"/><br>
+        E-Mail <input type="email" name="mail" placeholder="ejemplo@...mial.com"/><br>
+        Mensaje<br>
+        <textarea name="mensaje" rows="10" cols="50"></textarea>
+    </fieldset>
+    <br>
+    <input type="button" name="enviar" onclick="alert('Se han guardado los datos correctacmente')" value="Enviar"/>
+    <br>
+    <br>
+    <br>
+    <h3><a href="../index.html">Volver al inicio</a></h3>
+</body>
+</html>
